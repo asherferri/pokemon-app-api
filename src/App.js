@@ -1,9 +1,14 @@
-import React from 'react'
+import React, {useState} from 'react'
 import './App.css';
+import PokemonList from './components/PokemonList'
+
 
 function App() {
+
+  const [pokemon, setPokemon] = useState(["bulbasaur", "charmander"])
+
   return (
-    null
+    <PokemonList pokemon={pokemon}/>
   );
 }
 
